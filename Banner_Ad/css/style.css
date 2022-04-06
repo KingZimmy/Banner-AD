@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+	background: url("../images/starfall.png");
+}
+
+/* Banner */ 
+
+.banner {
+  background: url("../images/6984929.jpg");
+  width: 300px;
+  height: 570px;
+  position: fixed;
+	top: 150px;
+  left: -700px;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  border: 8px solid brown;
+  text-align: center;
+}
+
+.banner-img {
+  position: absolute;
+  top: 450px;
+  left: 50px;
+  width: 90%;
+  -webkit-animation: wiggle 3s infinite;
+          animation: wiggle 3s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+/* Wiggle Leperchaun */
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0);
+            transform: translate(0, 0) rotate(0);
+  }
+  25% {
+    -webkit-transform: translate(5px, 0) rotate(5deg);
+            transform: translate(5px, 0) rotate(5deg);
+  }
+  50% {
+    -webkit-transform: translate(-5px, 0) rotate(-5deg);
+            transform: translate(-5px, 0) rotate(-5deg);
+  }
+  75% {
+    -webkit-transform: translate(5px, 0) rotate(5deg);
+            transform: translate(5px, 0) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: translate(-100px, 0) rotate(-5deg);
+            transform: translate(-100px, 0) rotate(-5deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0);
+            transform: translate(0, 0) rotate(0);
+  }
+  25% {
+    -webkit-transform: translate(5px, 0) rotate(5deg);
+            transform: translate(5px, 0) rotate(5deg);
+  }
+  50% {
+    -webkit-transform: translate(-5px, 0) rotate(-5deg);
+            transform: translate(-5px, 0) rotate(-5deg);
+  }
+  75% {
+    -webkit-transform: translate(5px, 0) rotate(5deg);
+            transform: translate(5px, 0) rotate(5deg);
+  }
+  100% {
+    -webkit-transform: translate(-100px, 0) rotate(-5deg);
+            transform: translate(-100px, 0) rotate(-5deg);
+  }
+}
+
+/* Sliding Banner */
+
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(800px, 0);
+            transform: translate(800px, 0);
+  }
+}
+
+@keyframes slide {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(800px, 0);
+            transform: translate(800px, 0);
+  }
+}
+
+/* Pulse Logo */
+
+@-webkit-keyframes pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.pulse-grow {
+
+  -webkit-animation-name: pulse-grow;
+          animation-name: pulse-grow;
+  font-family: 'Luckiest Guy', cursive;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+	
+}
+ 
+.cereal-img {
+  position: fixed;
+  top: 90px;
+  left: -100px;
+  right: -90px;	
+}
